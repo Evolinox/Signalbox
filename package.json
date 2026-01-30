@@ -1,15 +1,21 @@
 {
   "name": "signal-box",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "packageManager": "pnpm@10.13.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "docs:install": "pnpm --filter docs install",
+    "docs:dev": "pnpm --filter docs docs:dev",
+    "docs:build": "pnpm --filter docs docs:build",
+    "docs:preview": "pnpm --filter docs docs:preview",
+    "control-box:dev": "pnpm --filter control-box dev",
+    "control-box:build": "pnpm --filter control-box build"
+  },
   "devDependencies": {
     "vitepress": "2.0.0-alpha.15"
-  },
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "autoprefixer": "^10.4.23",
