@@ -12,7 +12,9 @@
     "docs:build": "pnpm --filter docs docs:build",
     "docs:preview": "pnpm --filter docs docs:preview",
     "control-box:dev": "pnpm --filter control-box dev",
-    "control-box:build": "pnpm --filter control-box build"
+    "control-box:build": "pnpm --filter control-box build",
+    "control-box:tauri:dev": "pnpm --filter control-box tauri:dev",
+    "control-box:tauri:build": "pnpm --filter control-box tauri:build"
   },
   "devDependencies": {
     "vitepress": "2.0.0-alpha.15"
