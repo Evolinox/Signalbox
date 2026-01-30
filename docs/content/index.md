@@ -3,23 +3,28 @@
 layout: home
 
 hero:
-  name: "Signalbox"
-  text: "Modern way to control your Modelrailroad"
-  tagline: My great project tagline
+  text: "bam"
+  tagline: bum
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Introduction
+      link: /docs/overview/introduction
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Showcase
+      link: /showcase
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Install and Setup
+    icon: "🛠"
+    details: Learn how to install and setup Signalbox on your Layout.
+    link: /docs/overview/install-setup
+  - title: Control Box
+    icon: "🖥️"
+    details: Check out controlbox and how it displays data from your remoteboxes across the layout.
+    link: /docs/control-box/introduction
+  - title: Remote Box
+    icon: "📡"
+    details: Check out️ and how it feeds the controlbox with data.
+    link: /docs/remote-box/introduction
 ---
 
