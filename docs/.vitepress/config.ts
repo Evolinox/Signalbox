@@ -5,6 +5,8 @@ import { linkChangelog, linkRelease, socialDiscord, socialGit } from "./meta";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "content",
+  base: "/Signalbox",
+  lang: "en-US",
   title: "Signalbox",
   description: "Modern way to control your Modelrailroad",
   themeConfig: {
