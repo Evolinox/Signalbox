@@ -1,5 +1,8 @@
 {
+  "name": "signal-box",
+  "private": true,
   "version": "1.0.0",
+  "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "vitepress": "2.0.0-alpha.15"
   },
