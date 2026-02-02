@@ -29,6 +29,7 @@ export default defineConfig({
         icon: 'lucide:rocket',
         items: [
           { text: 'Introduction', link: '/docs/overview/introduction' },
+          { text: 'Install and Setup', link: '/docs/overview/install-setup' },
           { text: 'Changelog', link: '/docs/overview/changelog' }
         ]
       },
@@ -43,7 +44,8 @@ export default defineConfig({
         text: 'Remote Box',
         icon: 'lucide:box',
         items: [
-          { text: 'Introduction', link: '/docs/remote-box/introduction' }
+          { text: 'Introduction', link: '/docs/remote-box/introduction' },
+          { text: 'API', link: '/docs/remote-box/api' }
         ]
       }
     ],

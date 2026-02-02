@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  text: "bam"
-  tagline: bum
+  text: Signalbox
+  tagline: A Web-based solution for your Modellayout.
   actions:
     - theme: brand
       text: Introduction
