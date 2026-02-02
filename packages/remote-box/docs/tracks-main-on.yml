@@ -1,0 +1,15 @@
+info:
+  name: tracks/main/on
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:9074/tracks/main/on
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
