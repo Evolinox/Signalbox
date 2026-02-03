@@ -10,10 +10,12 @@ curl -X {Method} http://localhost:9074/{Endpoint}
 ## Endpoints
 Currently available endpoints are
 
-| Method | Endpoint         | Body  | Description                   |
-|:-------|:-----------------|:-----:|:------------------------------|
-| POST   | /tracks/main/on  |  {}   | Turns on power on main track  |
-| POST   | /tracks/main/off |  {}   | Turns off power on main track |
+| Method | Endpoint                    |              Body               | Description                        |
+|:-------|:----------------------------|:-------------------------------:|:-----------------------------------|
+| POST   | /tracks/main/               |         {"power": bool}         | Set power on main track            |
+| POST   | /tracks/prog/               |         {"power": bool}         | Set power on prog track            |
+| POST   | /vehicles/:dccAddress/speed | {"speed": int, "forward": bool} | Set speed and direction of Vehicle |
+| POST   | /vehicles/:dccAddress/func  | {"function": int, "state": int} | Set function of Vehicle            |
 
 ## .env Settings {#env-settings}
 You can change following settings
