@@ -1,0 +1,22 @@
+info:
+  name: vehicles/speed
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:9074/vehicles/223/speed
+  body:
+    type: json
+    data: |-
+      {
+        "speed": 0,
+        "forward": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

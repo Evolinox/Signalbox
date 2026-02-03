@@ -1,11 +1,17 @@
 info:
-  name: tracks/main/on
+  name: tracks/main
   type: http
   seq: 1
 
 http:
   method: POST
-  url: http://localhost:9074/tracks/main/on
+  url: http://localhost:9074/tracks/main
+  body:
+    type: json
+    data: |-
+      {
+        "power": true
+      }
   auth: inherit
 
 settings:

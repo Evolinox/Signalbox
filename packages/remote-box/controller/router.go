@@ -13,23 +13,12 @@ func RouteController(port string) {
 	}
 	router := gin.Default()
 
-	router.POST("/tracks/main/on", func(c *gin.Context) {
-		err := dcc.Send("1")
-		if err != nil {
-			c.JSON(500, gin.H{"error": err.Error()})
-			return
-		}
-		c.JSON(200, gin.H{"status": "on"})
-	})
+	tracks := router.Group("/tracks")
+	tracks.POST("/:trackName", dcc.SetTrack)
 
-	router.POST("/tracks/main/off", func(c *gin.Context) {
-		err := dcc.Send("0")
-		if err != nil {
-			c.JSON(500, gin.H{"error": err.Error()})
-			return
-		}
-		c.JSON(200, gin.H{"status": "off"})
-	})
+	vehicles := router.Group("/vehicles")
+	vehicles.POST("/:dccAddress/speed", dcc.SetVehicleSpeed)
+	vehicles.POST("/:dccAddress/func", dcc.SetVehicleFunction)
 
 	ginErr := router.Run(port)
 	if ginErr != nil {

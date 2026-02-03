@@ -1,0 +1,23 @@
+info:
+  name: vehicles/functions
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:9074/vehicles/223/func
+  body:
+    type: json
+    data: |-
+      // This enables the Headlights on DCC Address 223
+      {
+        "function": 0, // The Function ID (F0)
+        "state": 1 // The State (1 = On, 0 = Off)
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
